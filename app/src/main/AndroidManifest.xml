@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.usp.ime.seminarios">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WaitLogin"
+            android:label="Login" />
+        <activity
+            android:name=".Login"
+            android:label="Sistema de Seminários">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterStudent"
+            android:label="Cadastrar Aluno"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".WaitRegisterStudent"
+            android:label="Cadastrar Aluno" />
+        <activity
+            android:name=".StudentSeminars"
+            android:label="@string/title_activity_student_seminars"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfessorSeminars"
+            android:label="@string/title_activity_professor_seminars"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterProfessor"
+            android:parentActivityName=".ProfessorSeminars"
+            android:label="Cadastrar Professor"/>
+        <activity android:name=".WaitRegisterProfessor"
+            android:label="Cadastrar Professor"/>
+    </application>
+
+</manifest>

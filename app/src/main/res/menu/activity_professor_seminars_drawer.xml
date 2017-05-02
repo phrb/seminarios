@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="@string/seminar_home" />
+        <item
+            android:id="@+id/nav_create_seminar"
+            android:icon="@drawable/ic_playlist_add_black_24dp"
+            android:title="@string/seminar_create" />
+        <item
+            android:id="@+id/nav_new_professor"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="@string/seminar_new_professor" />
+        <item
+            android:id="@+id/nav_preferences"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/seminar_preferences" />
+    </group>
+
+    <item android:title="Gerenciar">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="@string/seminar_logout" />
+
+        </menu>
+    </item>
+</menu>
