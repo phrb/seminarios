@@ -40,8 +40,6 @@ export class Login {
   }
 
   showError(text) {
-    this.loading.dismiss();
-
     let alert = this.alertCtrl.create({
       title: 'Fail',
       subTitle: text,
